@@ -138,22 +138,8 @@ matrix = confusion_matrix(result)
 recall = recall(matrix)
 precision = precision(matrix)
 
-
-
 print(matrix[0])
 print(matrix[1])
 print(matrix[2])
 
 print(f1_score(recall, precision))
-
-
-
-
-
-'''
-recall = recall(matrix)
-print(recall[:3])
-print(recall[3:6])
-print(recall[6:])
-print(accuracy(matrix))
-'''
