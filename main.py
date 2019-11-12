@@ -16,13 +16,14 @@ def euclidean_distance(database_instance, test_data, number_of_attributes):
     distance = 0
     for i in range(number_of_attributes):
         distance += (float(database_instance[i]) - float(test_data[i])) ** 2
-    return distance
+    return distance ** 0.5
 
 #def knn(k, database, test_data):
     #for instance in database:
 
 
-data = read_database_file(sys.argv[1])
-print('Instance 1:',data[0][0], data[0][1])
-print('Instance 2:',data[1][0], data[1][1])
-print('Distance:',euclidean_distance(data[0],data[1], 2))
+data = read_database_file('spambase/spambase.data')
+#print(data[0])
+#print('Instance 1:',data[0][0], data[0][1])
+#print('Instance 2:',data[1][0], data[1][1])
+print('Distance:',euclidean_distance([0.9, 0.0, 0.5, 0.1], [0.0, 0.2, 0.2, 0.8], 4))
