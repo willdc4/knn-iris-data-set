@@ -1,2 +1,2 @@
 # knn-spambase
-[Spambase Dataset](http://archive.ics.uci.edu/ml/datasets/Spambase)
+[Iris Data Set](https://archive.ics.uci.edu/ml/datasets/Iris)
